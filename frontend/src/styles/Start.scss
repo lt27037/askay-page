@@ -30,8 +30,8 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    width: 90%;
-    max-width: 381px;
+    width: 381.51px;
+    height: 253.31px;
   }
   &__buttonWrapper{
     @include elementFlex(column, space-around, center);
