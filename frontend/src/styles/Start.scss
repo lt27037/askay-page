@@ -22,9 +22,6 @@
     font-size: 2rem;
     margin: 2rem 0;
     font-weight: 500;
-    &::last-word{
-      color: $mainColor;
-    }
   }
   &__ilustracja{
     position: absolute;

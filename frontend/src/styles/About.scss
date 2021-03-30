@@ -5,6 +5,7 @@
   width: 100%;
   min-height: 100vh;
   position: relative;
+  overflow-x: hidden;
   &__backgroundImg{
     position: absolute;
     z-index: -1;
@@ -13,8 +14,8 @@
     transform: translateX(50%);
   }
   &__title{
-    font-size: 4rem;
-    line-height: 4rem;
+    font-size: 3.6rem;
+    line-height: 5.4rem;
     font-weight: 600;
     color: $fontColor;
     position: relative;
@@ -24,7 +25,7 @@
       content: '';
       position: absolute;
       left: 0;
-      bottom: -3rem;
+      bottom: -2rem;
       width: 40%;
       height: 5px;
       border-radius: 99px;
