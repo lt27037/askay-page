@@ -1,0 +1,53 @@
+@import 'variables';
+
+.mainHeader{
+  @include elementFlex(row, space-between, center);
+  width: 100%;
+  height: 40px;
+  padding: 0 10%;
+  margin-top: 50px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  &__menuButton{
+    width: 30px;
+    height: 30px;
+    border-style: none;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    span{
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      position: absolute;
+      width: 30px;
+      height: 3.6px;
+      background: $fontColor;
+      font-size: 0px;
+      color: transparent;
+      border-style: none;
+      border-radius: 99px;
+      &::after,
+      &::before{
+        left: 0;
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 99px;
+      }
+      &::after{
+        top: 0;
+        transform: translateY(-10px);
+        background: $mainColor;
+      }
+      &::before{
+        bottom: 0;
+        transform: translateY(10px);
+        background: $fontColor;
+      }
+    }
+  }
+}

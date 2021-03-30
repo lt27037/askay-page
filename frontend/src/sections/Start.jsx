@@ -1,10 +1,21 @@
 import React from 'react';
 
+import napis from '../images/napis-askay.png';
+import ilustracja from '../images/Illustracja.png';
+import Button from '../components/Button';
+
 import '../styles/Start.scss';
 
 const Start = () => (
   <section className="start">
-    witaj na stronie askay
+    <img src={napis} alt="napis ASKAY w tle" className="start__backgroundImage" />
+    <h1 className="start__title">Witamy na stronie ASKAY</h1>
+    <h2 className="start__subtitle">Naszym celem jest twój sukces!</h2>
+    <img src={ilustracja} alt="ilustracja zespołu" className="start__ilustracja" />
+    <div className="start__buttonWrapper">
+      <Button content="Napisz do nas" />
+      <Button content="Portfolio" />
+    </div>
   </section>
 );
 
