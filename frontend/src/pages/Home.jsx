@@ -6,6 +6,7 @@ import Offer from '../sections/Offer';
 import About from '../sections/About';
 import Cooperation from '../sections/Cooperation';
 import Portfolio from '../sections/Portfolio';
+import Opinions from '../sections/Opinions';
 
 import '../styles/Home.scss';
 
@@ -17,6 +18,7 @@ const Home = () => (
     <About />
     <Cooperation />
     <Portfolio />
+    <Opinions />
   </div>
 );
 
