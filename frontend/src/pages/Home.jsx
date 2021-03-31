@@ -7,6 +7,7 @@ import About from '../sections/About';
 import Cooperation from '../sections/Cooperation';
 import Portfolio from '../sections/Portfolio';
 import Opinions from '../sections/Opinions';
+import Contact from '../sections/Contact';
 
 import '../styles/Home.scss';
 
@@ -19,6 +20,7 @@ const Home = () => (
     <Cooperation />
     <Portfolio />
     <Opinions />
+    <Contact />
   </div>
 );
 
