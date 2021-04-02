@@ -24,6 +24,7 @@
   &__stepWrapper{
     counter-reset: steps;
     @include elementFlex(column, flex-start, center);
+    margin: 3rem 0;
   }
   &__step{
     counter-increment: steps;

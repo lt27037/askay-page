@@ -1,11 +1,13 @@
 @import 'variables';
 
 .start{
+  @include elementFlex(column, flex-start, center);
   width: 100%;
   padding: 0 10%;
   margin-top: 140px;
   min-height: 100vh;
   position: relative;
+  overflow: hidden;
   &__backgroundImage{
     position: absolute;
     top: -20px;
@@ -24,18 +26,12 @@
     font-weight: 500;
   }
   &__ilustracja{
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
     width: 381.51px;
     height: 253.31px;
   }
   &__buttonWrapper{
     @include elementFlex(column, space-around, center);
     width: 100%;
-    height: 230px;
-    position: absolute;
-    bottom: 50px;
-    left: 0;
+    height: 200px;
   }
 }
