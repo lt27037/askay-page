@@ -8,6 +8,7 @@ import Cooperation from '../sections/Cooperation';
 import Portfolio from '../sections/Portfolio';
 import Opinions from '../sections/Opinions';
 import Contact from '../sections/Contact';
+import Footer from '../sections/Footer';
 
 import '../styles/Home.scss';
 
@@ -21,6 +22,7 @@ const Home = () => (
     <Portfolio />
     <Opinions />
     <Contact />
+    <Footer />
   </div>
 );
 

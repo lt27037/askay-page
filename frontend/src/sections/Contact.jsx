@@ -81,7 +81,7 @@ const Contact = () => {
           placeholder="Opis"
         />
         <span className="contact__form__info">* - pole obowiązkawe</span>
-        <input type="file" className="contact__form__input contact__form__file" />
+        <input type="file" className="contact__form__file" />
       </form>
       <Button content="Wyślij" />
     </section>
