@@ -16,3 +16,8 @@ $purple: #ACB5FC;
   justify-self: $justify;
   align-self: $align;
 }
+
+@mixin gridPosition($column, $row){
+  grid-row: $row;
+  grid-column: $column;
+}

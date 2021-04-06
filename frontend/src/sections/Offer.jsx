@@ -11,6 +11,12 @@ const Offer = () => (
       <SingleOffer />
       <SingleOffer />
       <SingleOffer />
+      <SingleOffer />
+      <SingleOffer />
+      <SingleOffer />
+      <SingleOffer />
+      <SingleOffer />
+      <SingleOffer />
     </div>
   </section>
 );

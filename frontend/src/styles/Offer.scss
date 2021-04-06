@@ -29,3 +29,21 @@
     margin-top: 6vh;
   }
 }
+
+@media(min-width: 1500px){
+  .offer{
+    &__title::after{
+      width: 12%;
+    }
+    &__wrapper{
+      width: 100%;
+      padding: 3vh 5%;
+      min-height: 50vh;
+      margin-top: 6vh;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 2rem;
+      row-gap: 1rem;
+    }
+  }
+}

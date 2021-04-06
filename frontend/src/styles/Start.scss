@@ -35,3 +35,27 @@
     height: 200px;
   }
 }
+
+@media(min-width: 1500px){
+  .start{
+    @include elementFlex(column, center, flex-start);
+    margin: 0;
+    padding: 0 5%;
+    &__buttonWrapper{
+      @include elementFlex(row, space-around, center);
+      width: auto;
+      height: auto;
+      button{
+        margin-right: 2rem;
+      }
+    }
+    &__ilustracja{
+      position: absolute;
+      right: 5%;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 55%;
+      height: auto;
+    }
+  }
+}

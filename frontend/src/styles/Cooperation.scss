@@ -49,3 +49,32 @@
     height: 340.81px;
   }
 }
+
+@media(min-width: 1500px){
+  .cooperation{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    padding: 5rem 5%;
+    &__title{
+      @include gridPosition(2, 1);
+      margin-top: 0;
+    }
+    &__text{
+      @include gridPosition(2, 2);
+      margin: 0;
+    }
+    &__stepWrapper{
+      @include gridPosition(2, 3);
+    }
+    .button{
+      @include gridPosition(2, 4);
+      justify-self: center;
+    }
+    &__illustration{
+      grid-column: 1;
+      grid-row: 1 / 5;
+      width: 100%;
+      height: auto;
+    }
+  }
+}
