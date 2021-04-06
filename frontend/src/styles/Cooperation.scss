@@ -54,17 +54,20 @@
   .cooperation{
     display: grid;
     grid-template-columns: repeat(2, 50%);
-    padding: 5rem 5%;
+    padding: 10rem 5%;
     &__title{
       @include gridPosition(2, 1);
-      margin-top: 0;
+      margin: 0;
+      font-size: 4rem;
     }
     &__text{
       @include gridPosition(2, 2);
       margin: 0;
+      font-size: 1.4rem;
     }
     &__stepWrapper{
       @include gridPosition(2, 3);
+      margin: 0;
     }
     .button{
       @include gridPosition(2, 4);
