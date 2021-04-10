@@ -1,7 +1,7 @@
 import React from 'react';
 
 import icon from '../images/outline_facebook_white_24dp.png';
-import askay from '../images/Askay-logo-final 1.png';
+import { ReactComponent as Askay } from '../images/Askay-logo-final 1.svg';
 import Contact from './Contact';
 
 import '../styles/Footer.scss';
@@ -63,7 +63,7 @@ const Footer = () => (
       </footer>
     </section>
     <div className="footer__copyright">
-      <img src={askay} alt="" className="footer__copyright__logo" />
+      <Askay className="footer__copyright__logo" />
       <span className="footer__copyright__text">Wszelkie prawa zastrzeżone.</span>
     </div>
   </>
