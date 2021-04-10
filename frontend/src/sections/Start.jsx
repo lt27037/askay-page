@@ -13,7 +13,7 @@ const Start = () => {
 
   useEffect(
     () => {
-      if (location.pathname === '/') start.current?.scrollIntoView({ behavior: 'smooth' });
+      if (location.pathname === '/') start.current?.scrollIntoView();
     },
     [location],
   );

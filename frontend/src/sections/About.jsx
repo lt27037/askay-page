@@ -13,7 +13,7 @@ const About = () => {
 
   useEffect(
     () => {
-      if (location.pathname === '/o-nas') about.current?.scrollIntoView({ behavior: 'smooth' });
+      if (location.pathname === '/o-nas') about.current?.scrollIntoView();
     },
     [location],
   );

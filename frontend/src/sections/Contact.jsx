@@ -27,7 +27,7 @@ const Contact = () => {
 
   useLayoutEffect(
     () => {
-      if (location.pathname === '/kontakt') contact.current?.scrollIntoView({ behavior: 'smooth' });
+      if (location.pathname === '/kontakt') contact.current?.scrollIntoView();
       console.log(location.pathname);
       console.log(contact.current);
     },

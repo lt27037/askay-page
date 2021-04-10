@@ -11,7 +11,7 @@ const Offer = () => {
 
   useEffect(
     () => {
-      if (location.pathname === '/oferta') offer.current?.scrollIntoView({ behavior: 'smooth' });
+      if (location.pathname === '/oferta') offer.current?.scrollIntoView();
     },
     [location],
   );
