@@ -37,7 +37,7 @@
   .offer{
     @include elementFlex(column, flex-start ,flex-start);
     &__title{
-      margin: 2.5rem 5%;
+      margin: 6.5rem 5% 2.5rem 5%;
       &::after{
         width: 100px;
         top: 50%;
@@ -62,7 +62,7 @@
 @media(min-width: 1850px){
   .offer{
     &__title{
-      margin: 2.5rem 5%;
+      margin: 6.5rem 5% 2.5rem 5%;
       width: auto;
     }
     &__wrapper{

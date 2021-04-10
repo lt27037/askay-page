@@ -10,6 +10,9 @@
   top: 0;
   z-index: 999 !important;
   background: #fff;
+  &__menu{
+    display: none;
+  }
   &__logo{
     width: 154px;
   }
@@ -60,5 +63,29 @@
   .mainHeader{
     padding: 20px 5%;
     height: 80px;
+    &__menuButton{
+      display: none;
+    }
+    &__menu{
+      @include elementFlex(row, flex-end, center);
+      &__list{
+        @include elementFlex(row, flex-end, center);
+        list-style: none;
+      }
+      &__item{
+        padding: 1rem 1.5rem;
+        a{
+          text-decoration: none;
+          color: $fontColor;
+          font-weight: 500;
+          text-transform: uppercase;
+          font-size: 15px;
+        }
+        a.active{
+          color: $mainColor;
+        }
+      }
+      
+    }
   }
 }

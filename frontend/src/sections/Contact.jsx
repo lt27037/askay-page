@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useLayoutEffect, useRef } from 'react';
+import { useLocation } from 'react-router-dom';
 
 import Button from '../components/Button';
 
@@ -21,8 +22,20 @@ const Contact = () => {
   const handleBudgetMin = (e) => setBudgetMin(e.target.value);
   const handleBudgetMax = (e) => setBudgetMax(e.target.value);
 
+  const contact = useRef(null);
+  const location = useLocation();
+
+  useLayoutEffect(
+    () => {
+      if (location.pathname === '/kontakt') contact.current?.scrollIntoView({ behavior: 'smooth' });
+      console.log(location.pathname);
+      console.log(contact.current);
+    },
+    [location],
+  );
+
   return (
-    <section className="contact">
+    <section className="contact" ref={contact}>
       <h2 className="contact__title">
         Złóż
         <span> zamówienie</span>
