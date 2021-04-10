@@ -10,6 +10,9 @@
   top: 0;
   z-index: 999 !important;
   background: #fff;
+  &__logo{
+    width: 154px;
+  }
   &__menuButton{
     width: 30px;
     height: 30px;
