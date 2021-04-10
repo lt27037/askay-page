@@ -33,7 +33,7 @@
   }
 }
 
-@media(min-width: 1500px){
+@media(min-width: 1150px){
   .offer{
     @include elementFlex(column, flex-start ,flex-start);
     &__title{
@@ -48,7 +48,7 @@
     }
     &__wrapper{
       width: 100%;
-      padding: 3vh 7%;
+      padding: 3vh 3%;
       min-height: 50vh;
       margin-top: 6vh;
       display: grid;

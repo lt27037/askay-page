@@ -53,14 +53,25 @@
   }
 }
 
-@media(min-width: 1500px){
+@media(min-width: 1150px){
+  
+}
+
+@media(min-width: 1150px){
   .start{
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     row-gap: initial;
     padding: 0 5%;
+    background-image: url(../images/start-section-background.png);
+    background-position: top left;
+    background-size: 100%;
+    background-repeat: no-repeat;
     &__titleWrapper{
       position: relative;
+    }
+    &__backgroundImage{
+      display: none;
     }
     &__title{
       font-size: 4rem;
@@ -99,13 +110,6 @@
   .start{
     display: grid;
     grid-template-columns: 50% 50%;
-    background-image: url(../images/start-section-background.png);
-    background-position: top left;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    &__backgroundImage{
-      display: none;
-    }
     &__title{
       font-size: 5.3rem;
       position: absolute;
