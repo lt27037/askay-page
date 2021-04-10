@@ -8,6 +8,7 @@
   background-image: url(../images/footer-background.png);
   background-repeat: no-repeat;
   background-position: bottom;
+  background-size: 100%;
   &__background{
     position: absolute;
     width: 100%;
@@ -68,6 +69,20 @@
       color: #A0A0A0;
       padding-top: 1rem;
       font-weight: 500;
+    }
+  }
+}
+
+@media(min-width: 1850px){
+  .footer{
+    padding: 10rem 10%;
+    grid-column: 1;
+    grid-row: 1;
+    background-image: url(../images/footer-background-desktop.png);
+    &__wrapper{
+      width: 100%;
+      display: grid;
+      grid-template-columns: 40% 60%;
     }
   }
 }
