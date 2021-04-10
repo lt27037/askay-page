@@ -23,8 +23,16 @@ const Contact = () => {
 
   return (
     <section className="contact">
-      <h2 className="contact__title">Napisz do nas</h2>
-      <h3 className="contact__subtitle">Napisz do nas poprzez Facebooka lub wypełnij poniższy formularz</h3>
+      <h2 className="contact__title">
+        Złóż
+        <span> zamówienie</span>
+      </h2>
+      <h3 className="contact__subtitle">
+        Napisz do nas poprzez
+        <span> Facebooka </span>
+        lub wypełnij poniższy
+        <span> formularz</span>
+      </h3>
       <h4 className="contact__formTitle">Formularz</h4>
       <form className="contact__form">
         <input

@@ -17,6 +17,9 @@
     position: relative;
     margin: 0 0 5rem 0;
     width: 100%;
+    span{
+      color: $mainColor;
+    }
     &::after{
       content: '';
       position: absolute;
@@ -104,11 +107,11 @@
     &__title{
       width: auto;
       &::after{
+        width: 100px;
         top: 50%;
+        left: initial;
         right: 0;
-        transform: translateX(100%) translateY(-50%);
-        width: 30%;
-        height: 5px;
+        transform: translateY(-50%) translateX(110%);
       }
     }
     &__wrapper{

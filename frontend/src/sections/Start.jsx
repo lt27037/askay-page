@@ -13,8 +13,14 @@ const Start = () => {
     <section className="start">
       <img src={napis} alt="napis ASKAY w tle" className="start__backgroundImage" />
       <div className="start__titleWrapper">
-        <h1 className="start__title">Witamy na stronie ASKAY</h1>
-        <h2 className="start__subtitle">Naszym celem jest twój sukces!</h2>
+        <h1 className="start__title">
+          Witamy na stronie
+          <span> ASKAY</span>
+        </h1>
+        <h2 className="start__subtitle">
+          Naszym celem jest twój
+          <span> sukces!</span>
+        </h2>
       </div>
       <img src={img} alt="ilustracja zespołu" className="start__ilustracja" />
       <div className="start__buttonWrapper">

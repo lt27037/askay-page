@@ -10,6 +10,9 @@
     color: $fontColor;
     position: relative;
     margin: 2.5rem 10%;
+    span{
+      color: $mainColor;
+    }
     &::after{
       content: '';
       position: absolute;
@@ -32,10 +35,15 @@
 
 @media(min-width: 1500px){
   .offer{
+    @include elementFlex(column, flex-start ,flex-start);
     &__title{
       margin: 2.5rem 5%;
       &::after{
-        width: 12%;
+        width: 100px;
+        top: 50%;
+        left: initial;
+        right: 0;
+        transform: translateY(-50%) translateX(110%);
       }
     }
     &__wrapper{
@@ -55,9 +63,7 @@
   .offer{
     &__title{
       margin: 2.5rem 5%;
-      &::after{
-        width: 12%;
-      }
+      width: auto;
     }
     &__wrapper{
       width: 100%;

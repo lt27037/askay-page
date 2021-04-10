@@ -10,7 +10,10 @@ const Opinions = () => (
       <h3 className="partners__title">Partnerzy</h3>
       <div className="partners__sliderBox">slider</div>
     </section>
-    <h2 className="opinions__title">Opinie Klientów</h2>
+    <h2 className="opinions__title">
+      Opinie
+      <span> Klientów</span>
+    </h2>
     <h3 className="opinions__subtitle">Dowiedz się, co sądza o nas Klienci.</h3>
     <div className="opinions__wrapper">
       <Opinion />

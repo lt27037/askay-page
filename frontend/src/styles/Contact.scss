@@ -12,10 +12,16 @@
     line-height: 54px;
     width: 100%;
     text-align: left;
+    span{
+      color: $mainColor;
+    }
   }
   &__subtitle{
     font-size: 1.4rem;
     font-weight: 500;
+    span{
+      color: $mainColor;
+    }
   }
   &__formTitle{
     font-size: 2.4rem;

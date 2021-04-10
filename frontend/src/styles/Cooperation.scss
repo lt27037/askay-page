@@ -13,6 +13,9 @@
     margin: 3rem 0;
     width: 100%;
     text-align: left;
+    span{
+      color: $mainColor;
+    }
   }
   &__text{
     font-weight: 400;

@@ -27,11 +27,17 @@
     text-transform: uppercase;
     font-weight: 600;
     line-height: 4rem;
+    span{
+      color: $mainColor;
+    }
   }
   &__subtitle{
     font-size: 2rem;
     margin: 2rem 0;
     font-weight: 500;
+    span{
+      color: $mainColor;
+    }
   }
   &__ilustracja{
     @include gridPosition(1, 2);

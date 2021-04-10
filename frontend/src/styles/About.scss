@@ -21,6 +21,9 @@
     position: relative;
     margin: 2.5rem 10%;
     width: 80%;
+    span{
+      color: $mainColor;
+    }
     &::after{
       content: '';
       position: absolute;
@@ -83,10 +86,14 @@
     }
     &__title{
       margin: 4rem 0 0 0;
-      width: 90%;
+      width: auto;
       font-size: 4rem;
       &::after{
-        width: 15%;
+        width: 100px;
+        top: 50%;
+        left: initial;
+        right: 0;
+        transform: translateY(-50%) translateX(110%);
       }
     }
     &__text{

@@ -8,7 +8,10 @@ import '../styles/PortfolioSection.scss';
 const Portfolio = () => (
   <section className="portfolio">
     <div className="portfolio__container">
-      <h2 className="portfolio__title">Nasze Realizacje</h2>
+      <h2 className="portfolio__title">
+        Nasze
+        <span> Realizacje</span>
+      </h2>
       <p className="portfolio__discription">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique culpa
         vitae eligendi id deleniti amet fugit, quia ipsum quisquam a, cupiditate

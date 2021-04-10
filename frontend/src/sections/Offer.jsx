@@ -6,7 +6,10 @@ import '../styles/Offer.scss';
 
 const Offer = () => (
   <section className="offer">
-    <h2 className="offer__title">Czym się zajmujemy?</h2>
+    <h2 className="offer__title">
+      Czym się
+      <span> zajmujemy?</span>
+    </h2>
     <div className="offer__wrapper">
       <SingleOffer />
       <SingleOffer />
