@@ -1,6 +1,6 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
-import Header from '../components/Header';
 import Start from '../sections/Start';
 import Offer from '../sections/Offer';
 import About from '../sections/About';
@@ -12,8 +12,14 @@ import Footer from '../sections/Footer';
 import '../styles/Home.scss';
 
 const Home = () => (
-  <div className="home">
-    <Header />
+  // eslint-disable-next-line react/jsx-pascal-case
+  <motion.div
+    className="home"
+    transition={{ duration: 0.5 }}
+    initial={{ opacity: 0, transform: 'translateX(-20%)' }}
+    animate={{ opacity: 1, transform: 'translateX(0%)' }}
+    exit={{ opacity: 0, transform: 'translateX(-20%)' }}
+  >
     <Start />
     <Offer />
     <About />
@@ -21,6 +27,7 @@ const Home = () => (
     <Portfolio />
     <Opinions />
     <Footer />
-  </div>
+  </motion.div>
 );
+
 export default Home;

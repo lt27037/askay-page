@@ -10,8 +10,13 @@
 
 :root{
   font-size: 62.5%;
-  scroll-behavior: smooth;
+  // scroll-behavior: smooth;
 }
+
+body{
+  overflow-x: hidden;
+}
+
 
 .appContainer{
   @include elementFlex(column, flex-start, center);

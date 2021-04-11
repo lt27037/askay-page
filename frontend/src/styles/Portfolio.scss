@@ -1,6 +1,7 @@
 @import 'variables';
 
 .portfolioPage{
+  @include elementFlex(column, center, center);
   width: 100%;
   min-height: 110vh;
 }

@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useLocation, useHistory } from 'react-router-dom';
 
 import napis from '../images/napis-askay.png';
 import ilustracja from '../images/Illustracja-desktop.png';
@@ -10,6 +10,7 @@ import '../styles/Start.scss';
 const Start = () => {
   const start = useRef(null);
   const location = useLocation();
+  const history = useHistory();
 
   useEffect(
     () => {
@@ -33,8 +34,8 @@ const Start = () => {
       </div>
       <img src={ilustracja} alt="ilustracja zespołu" className="start__ilustracja" />
       <div className="start__buttonWrapper">
-        <Button content="Napisz do nas" />
-        <Button content="Portfolio" />
+        <Button content="Napisz do nas" click={() => history.push({ pathname: '/kontakt' })} />
+        <Button content="Portfolio" click={() => history.push({ pathname: '/portfolio' })} />
       </div>
     </section>
   );
