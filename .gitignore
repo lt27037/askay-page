@@ -1,5 +1,3 @@
-./frontend
-
 ############################
 # OS X
 ############################
@@ -96,6 +94,7 @@ logs
 results
 node_modules
 .node_history
+frontend
 
 ############################
 # Tests
