@@ -46,6 +46,11 @@ const PortfolioMenu = () => (
           Ilustracje
         </NavLink>
       </li>
+      <li className="portfolioMenu__item">
+        <NavLink to="/portfolio/inne">
+          Inne...
+        </NavLink>
+      </li>
     </ul>
   </nav>
 );

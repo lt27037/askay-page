@@ -14,7 +14,7 @@ const Portfolio = () => {
       try {
         const res = await fetch('https://picsum.photos/v2/list?page=2&limit=100');
         const data = await res.json();
-        const urls = data.map((item) => <img key={item.id} src={`${item.download_url}`} className="portfolioPage__image" alt="element galerii" />);
+        const urls = data.map((item) => <img key={item.id} src={`https://picsum.photos/id/${item.id}/${Math.floor(item.width * 0.3)}/${Math.floor(item.height * 0.3)}`} className="portfolioPage__image" alt="element galerii" />);
         setPhotos(urls);
       } catch (err) {
         console.error(err);
@@ -23,10 +23,8 @@ const Portfolio = () => {
     [],
   );
 
-  console.log(photos);
-
   const breakpointColumnsObj = {
-    default: 5,
+    default: 4,
     1100: 3,
     700: 2,
     500: 1,
@@ -36,9 +34,9 @@ const Portfolio = () => {
     <motion.div
       className="portfolioPage"
       transition={{ duration: 0.5 }}
-      initial={{ opacity: 0, transform: 'translateX(20%)' }}
-      animate={{ opacity: 1, transform: 'translateX(0%)' }}
-      exit={{ opacity: 0, transform: 'translateX(20%)' }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
     >
       <header className="portfolioPage__header">
         <h1 className="portfolioPage__title">Realizacje</h1>

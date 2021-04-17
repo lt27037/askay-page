@@ -2,10 +2,11 @@
 
 .portfolioMenu{
   width: 100%;
-  padding: 0 10%;
+  padding: 0 10% 15px 10%;
   margin-top: 50px;
-  position: sticky;
-  top: 100px;
+  position: static;
+  background-color: #fff;
+  top: 80px;
   &__list{
     @include elementFlex(row, space-between, center);
     list-style: none;
@@ -26,6 +27,40 @@
     a.active{
       background-color: $mainColor;
       color: #ffffff;
+    }
+  }
+}
+
+@media(max-width: 1550px){
+  .portfolioMenu{
+    padding: 0 3%;
+  }
+}
+
+@media(max-width: 786px){
+  .portfolioMenu{
+    overflow-x: scroll;
+    position: static;
+    padding: 0 8%;
+    &__list{
+      width: 1450px;
+      &::after,
+      &::before{
+        content: '';
+        position: fixed;
+        height: 500px;
+        width: 7%;
+      }
+      &::after{
+        left: 0;
+        top: 0;
+        background-image: linear-gradient(to right, #fff, transparent);
+      }
+      &::before{
+        right: 0;
+        top: 0;
+        background-image: linear-gradient(to left, #fff, transparent);
+      }
     }
   }
 }

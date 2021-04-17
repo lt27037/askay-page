@@ -16,9 +16,9 @@ const Home = () => (
   <motion.div
     className="home"
     transition={{ duration: 0.5 }}
-    initial={{ opacity: 0, transform: 'translateX(-20%)' }}
-    animate={{ opacity: 1, transform: 'translateX(0%)' }}
-    exit={{ opacity: 0, transform: 'translateX(-20%)' }}
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    exit={{ opacity: 0 }}
   >
     <Start />
     <Offer />
