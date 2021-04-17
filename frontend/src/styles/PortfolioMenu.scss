@@ -1,0 +1,31 @@
+@import 'variables';
+
+.portfolioMenu{
+  width: 100%;
+  padding: 0 10%;
+  margin-top: 50px;
+  position: sticky;
+  top: 100px;
+  &__list{
+    @include elementFlex(row, space-between, center);
+    list-style: none;
+    width: 100%;
+  }
+  &__item{
+    @include elementFlex(row, center, center);
+    cursor: pointer;
+    a{
+      border: 1px solid $mainColor;
+      padding: 10px 30px;
+      border-radius: 10px;
+      font-size: 14px;
+      color: $fontColor;
+      text-decoration: none;
+      background-color: #fff;
+    }
+    a.active{
+      background-color: $mainColor;
+      color: #ffffff;
+    }
+  }
+}

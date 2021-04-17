@@ -13,23 +13,11 @@ const App = () => (
       <Header />
       <Switch>
 
-        <Route path="/" exact>
+        <Route path={['/', '/oferta', '/o-nas', '/kontakt']} exact>
           <Home />
         </Route>
 
-        <Route path="/oferta" exact>
-          <Home />
-        </Route>
-
-        <Route path="/o-nas" exact>
-          <Home />
-        </Route>
-
-        <Route path="/kontakt" exact>
-          <Home />
-        </Route>
-
-        <Route path="/portfolio" exact>
+        <Route path="/portfolio">
           <Portfolio />
         </Route>
 

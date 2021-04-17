@@ -1,7 +1,47 @@
 @import 'variables';
 
 .portfolioPage{
-  @include elementFlex(column, center, center);
+  @include elementFlex(column, flex-start, center);
   width: 100%;
   min-height: 110vh;
+  &__header{
+    @include elementFlex(column, center, center);
+    width: 100%;
+    margin-top: 120px;
+  }
+  &__title{
+    color: $mainColor;
+    font-size: 3.7rem;
+    line-height: 5.5rem;
+  }
+  &__subtitle{
+    color: $fontColor;
+    font-size: 1.6rem;
+    font-weight: 400; 
+  }
+  &__container{
+    min-height: 200vh;
+    margin-top: 30px;
+  }
+  &__image{
+    width: 90%;
+  }
+}
+
+.my-masonry-grid {
+  display: -webkit-box; /* Not needed if autoprefixing */
+  display: -ms-flexbox; /* Not needed if autoprefixing */
+  display: flex;
+  margin-left: -30px; /* gutter size offset */
+  width: auto;
+}
+.my-masonry-grid_column {
+  padding-left: 30px; /* gutter size */
+  background-clip: padding-box;
+}
+
+/* Style your items */
+.my-masonry-grid_column > div { /* change div to reference your elements you put in <Masonry> */
+  background: grey;
+  margin-bottom: 30px;
 }
